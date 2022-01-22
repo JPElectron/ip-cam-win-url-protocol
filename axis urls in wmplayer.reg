@@ -1,0 +1,61 @@
+Windows Registry Editor Version 5.00
+
+;NOTES...
+;paths are hard-coded to Program Files (x86) since AMC is 32-bit only, wmplayer must also be launched 32-bit
+;AMC from https://www.axis.com/support/tools/install-and-manage-systems/axis-media-control
+;is required to be installed first, before running this .reg
+[HKEY_CLASSES_ROOT\axrtpm]
+"URL Protocol"=""
+@="URL:axrtpm Protocol"
+
+[HKEY_CLASSES_ROOT\axrtpm\shell]
+
+[HKEY_CLASSES_ROOT\axrtpm\shell\open]
+
+[HKEY_CLASSES_ROOT\axrtpm\shell\open\command]
+@="\"C:\\Program Files (x86)\\Windows Media Player\\wmplayer.exe\" %1"
+
+[HKEY_CLASSES_ROOT\axrtpu]
+"URL Protocol"=""
+@="URL:axrtpu Protocol"
+
+[HKEY_CLASSES_ROOT\axrtpu\shell]
+
+[HKEY_CLASSES_ROOT\axrtpu\shell\open]
+
+[HKEY_CLASSES_ROOT\axrtpu\shell\open\command]
+@="\"C:\\Program Files (x86)\\Windows Media Player\\wmplayer.exe\" %1"
+
+[HKEY_CLASSES_ROOT\axrtsp]
+"URL Protocol"=""
+@="URL:axrtsp Protocol"
+
+[HKEY_CLASSES_ROOT\axrtsp\shell]
+
+[HKEY_CLASSES_ROOT\axrtsp\shell\open]
+
+[HKEY_CLASSES_ROOT\axrtsp\shell\open\command]
+@="\"C:\\Program Files (x86)\\Windows Media Player\\wmplayer.exe\" %1"
+
+[HKEY_CLASSES_ROOT\axrtsphttp]
+"URL Protocol"=""
+@="URL:axrtsphttp Protocol"
+
+[HKEY_CLASSES_ROOT\axrtsphttp\shell]
+
+[HKEY_CLASSES_ROOT\axrtsphttp\shell\open]
+
+[HKEY_CLASSES_ROOT\axrtsphttp\shell\open\command]
+@="\"C:\\Program Files (x86)\\Windows Media Player\\wmplayer.exe\" %1"
+
+[HKEY_CLASSES_ROOT\axrtsphttps]
+"URL Protocol"=""
+@="URL:axrtsphttps Protocol"
+
+[HKEY_CLASSES_ROOT\axrtsphttps\shell]
+
+[HKEY_CLASSES_ROOT\axrtsphttps\shell\open]
+
+[HKEY_CLASSES_ROOT\axrtsphttps\shell\open\command]
+@="\"C:\\Program Files (x86)\\Windows Media Player\\wmplayer.exe\" %1"
+
