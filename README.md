@@ -1,25 +1,23 @@
 # ip-cam-win-url-protocol
 
-Allow rtsp or ax protocol URLs to be opened with wmplayer or VLC on Windows
+Allow rtsp or ax protocol URLs to be opened with VLC or WMPlayer.exe on Windows, for example...
 
-For example, allow...
+    Start > Run > rtsp://<camera_ip> ... to open with VLC
+    or
+    HTML "a href" link on a webpage such as axrtsp://<camera_ip> ... to open with Windows Media Player
 
-Start > Run > rtsp://<camera_ip> to open with VLC
-
-or
-
-HTML "a href" link such as axrtsp://<camera_ip> to open with Windows Media Player
-
-This method of rtsp or axrtsp URL opening Windows Media Player or VLC is desirable if you want a full-screen IP camera view to launch automatically on Windows.
+This method of rtsp/axrtsp URL opening VLC/Windows Media Player is desirable if you want a full-screen IP camera view to launch automatically on Windows.  One use case is when you are viewing an IP camera view in webcamOnTop ( see: https://github.com/JPElectron/webcamOnTop ) but then want a button to make the same camera view load full-screen.
 
 Useful with home or business automation, for example...
 
-Doorbell push: IFTTT > webhook > axrtsp:// > opens wmplayer.exe /fullscreen
+    Doorbell push: IFTTT > webhook > axrtsp:// > opens wmplayer.exe /fullscreen
 
-Package delivery: Sighthound video detects person on porch > webhook > axrtsp:// > opens wmplayer.exe /fullscreen
+    Package delivery: Sighthound video detects person on porch > webhook > axrtsp:// > opens wmplayer.exe /fullscreen
+     
+    Secure area: Sighthound video detects object passing virtual line > webhook > launch web
 
-Using Windows Media Player, a so-called 'Ax protocol' needs to be used...
-(required to have AMC from https://www.axis.com/support/tools/install-and-manage-systems/axis-media-control installed)
+Using Windows Media Player, a so-called 'Ax protocol' needs to be used.  It is required to have Axis Media Control ( AMC from: https://www.axis.com/support/tools/install-and-manage-systems/axis-media-control ) installed.
+
 Note: This 'Ax protocol' can't play a Panasonic network camera RTSP / H.264 URL even when properly formatted, the video feed is simply blank
 
 
