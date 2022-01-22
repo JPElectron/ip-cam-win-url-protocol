@@ -3,13 +3,19 @@
 Allow rtsp or ax protocol URLs to be opened with wmplayer or VLC on Windows
 
 For example, allow...
+
 Start > Run > rtsp://<camera_ip> to open with VLC
+
 or
+
 HTML "a href" link such as axrtsp://<camera_ip> to open with Windows Media Player
 
 This method of rtsp or axrtsp URL opening Windows Media Player or VLC is desirable if you want a full-screen IP camera view to launch automatically on Windows.
+
 Useful with home or business automation, for example...
+
 Doorbell push: IFTTT > webhook > axrtsp:// > opens wmplayer.exe /fullscreen
+
 Package delivery: Sighthound video detects person on porch > webhook > axrtsp:// > opens wmplayer.exe /fullscreen
 
 Using Windows Media Player, a so-called 'Ax protocol' needs to be used...
