@@ -20,6 +20,9 @@ Using Windows Media Player, a so-called 'Ax protocol' needs to be used.  It is r
 
 Note: This 'Ax protocol' can't play a Panasonic network camera RTSP / H.264 URL even when properly formatted, the video feed is simply blank
 
+## How to implement...
+
+Download and open the appropriate .reg file (available in this repository) to import it.
 
 ## Using VLC or Quicktime...
 
