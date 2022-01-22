@@ -6,7 +6,7 @@ Allow rtsp or ax protocol URLs to be opened with VLC or WMPlayer.exe on Windows,
     or
     HTML "a href" link on a webpage such as axrtsp://<camera_ip> ... to open with Windows Media Player
 
-This method of rtsp/axrtsp URL opening VLC/Windows Media Player is desirable if you want a full-screen IP camera view to launch automatically on Windows.  One use case is when you are viewing an IP camera view in webcamOnTop ( see: https://github.com/JPElectron/webcamOnTop ) but then want a button to make the same camera view load full-screen.
+This method of rtsp/axrtsp URL opening VLC/Windows Media Player is desirable if you want a full-screen IP camera view to launch automatically on Windows.  One use-case is when you are already viewing an IP camera in webcamOnTop ( see: https://github.com/JPElectron/webcamOnTop ) but then want a link or button so the same camera view opens full-screen.
 
 Useful with home or business automation, for example...
 
@@ -20,7 +20,7 @@ Using Windows Media Player, a so-called 'Ax protocol' needs to be used.  It is r
 
 Note: This 'Ax protocol' can't play a Panasonic network camera RTSP / H.264 URL even when properly formatted, the video feed is simply blank
 
-## How to implement...
+## Installation...
 
 Download and open the appropriate .reg file (available in this repository) to import it.
 
