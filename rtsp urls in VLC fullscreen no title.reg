@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+;NOTES...
+;paths are hard-coded to Program Files (x86) thus VLC is launched 32-bit
+;when on 64-bit Windows installations
+[HKEY_CLASSES_ROOT\rtsp]
+"URL Protocol"=""
+@="URL:rtsp Protocol"
+
+[HKEY_CLASSES_ROOT\rtsp\shell]
+
+[HKEY_CLASSES_ROOT\rtsp\shell\open]
+
+[HKEY_CLASSES_ROOT\rtsp\shell\open\command]
+@="\"C:\\Program Files (x86)\\VideoLAN\\VLC\\vlc.exe\" --no-video-title --fullscreen %1"
+
